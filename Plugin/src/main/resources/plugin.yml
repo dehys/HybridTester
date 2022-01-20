@@ -1,0 +1,17 @@
+name: HybridTester
+version: '${project.version}'
+main: com.dehys.hybridtester.plugin.HybridTester
+api-version: 1.18
+prefix: HybridTester
+load: STARTUP
+depend: [ PlugMan ]
+authors: [ dehys ]
+description: A fast way to test your plugins
+website: https://dehys.com/projects/HybridTester
+commands:
+  tpl:
+    usage: /tpl
+    description: Lists all the plugins loaded by HybridTester
+    aliases: [ tpl, testplugins ]
+    permission: hybridtester.tpl
+    permission-message: You don't have permission to use this command!
